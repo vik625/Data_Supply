@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Supply</title>
+    <link  rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>!-->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.33/dist/web3.min.js"></script>
+    <script type="module" src="./js/trace.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="teal">
+            <div class="nav-wrapper">
+                <!-- <a href="#" class="brand-logo right">Logo</a> -->
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newData.html">Register Data</a></li>
+                    <!-- <li><a href="traceData.html">Trace Data</a></li> -->
+                    <li><a href="transferOwnership.html">Transfer Ownership</a></li>
+                  <!--  <li><a href="register.html">Register </a></li>
+                    <li><a href="login.html">Login</a></li> -->
+                               </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col s6">
+                <h2>Trace Data</h2>
+                <label>Address: </label>
+                <p id="dealer-address">0x9F61DD37328502Dd8d6bE5d7A0B0af466986cbF7</p>
+            </div>
+        </div>
+
+                    <div class="content-wrapper">
+
+                        <div class="container-fluid">
+                          <div class="container-fluid">
+                              <form class="form-horizontal">
+                                  <div class="form-group">
+                                        <label class="control-label col-sm-2" >Tracking number:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="t_id" placeholder="Enter track no">
+                                        </div>
+                                    </div>
+                              </form>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" id="track" class="btn btn-default">Track</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div  id ="display1" class="content-wrapper" style="padding-top: 10%;padding-left:50px;">
+
+                            <div class="container-fluid">
+                              <div class="container-fluid">
+                                  <form class="form-horizontal">
+                                      <div class="form-group">
+                                            <label class="control-label col-sm-2" >Tracking ID:</label>
+                                            <div class="col-sm-10">
+                                                <span id="trackid"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2" >Data ID:</label>
+                                                <div class="col-sm-10">
+                                                    <span id="productid"></span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2" >Owner number:</label>
+                                                <div class="col-sm-10">
+                                                    <span id="owner"></span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2" >Owner Address</label>
+                                                <div class="col-sm-10">
+                                                    <span id="ownerAdd"></span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2" >Time Stamp:</label>
+                                                <div class="col-sm-10">
+                                                    <span id="time"></span>
+                                                </div>
+                                            </div>
+                                  </form>
+                              </div>
+
+                            </div>
+                          </div>
+                </div>
+
+
+</body>
+</html>
